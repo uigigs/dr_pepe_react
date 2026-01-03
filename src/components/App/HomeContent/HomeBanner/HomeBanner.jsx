@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import HomeBannerStyle from "./HomeBanner.style";
 import ScrollAnimate from "../../../Core/ScrollAnimate";
 
+import BannerShape from '../../../../assets/images/shape/banner-shape.png'
+
 const SALE_END_TIME = new Date("2026-01-31T23:59:59").getTime();
 // 👆 change date/time as needed
 
@@ -69,6 +71,7 @@ const HomeBanner = () => {
                     {String(timeLeft.s).padStart(2, "0")}<span>s</span>
                   </h2>
                 </div>
+                <img src={BannerShape} alt="shape" className="banner-shape" />
 
                 <button className="primary-btn banner-btn hover-btn">
                   <span className="btn-text">

@@ -1,7 +1,6 @@
 import React from 'react'
 import BuyDrPepeStyle from './BuyDrPepe.style'
 import SectionTitle from '../../../Core/SectionTitle/SectionTitle'
-import buyDrPepeImg from '../../../../assets/images/img/buy-drpepe-img.png'
 import checkIcon from '../../../../assets/images/icon/check.png'
 import cursorIcon from '../../../../assets/images/icon/cursor.png'
 import ScrollAnimate from '../../../Core/ScrollAnimate'
@@ -37,7 +36,6 @@ const BuyDrPepe = () => {
                     <div className="col-lg-6">
                         <ScrollAnimate delay={300}>
                             <div className="buy-drpepe-right">
-                                {/* <img src={buyDrPepeImg} alt="img" /> */}
                                 <h6>Staking Dr Pepe and capturing a portion of the subscription revenue.</h6>
                                 <ul>
                                     <li>

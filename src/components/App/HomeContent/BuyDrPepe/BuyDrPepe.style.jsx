@@ -2,8 +2,10 @@ import styled from "styled-components";
 
 
 const BuyDrPepeStyle = styled.div`
-    padding-top: 70px;
-    padding-bottom: 120px;
+    margin-top: 70px;
+    margin-bottom: 120px;
+    background: rgba(255, 255, 255, 0.04);
+    padding: 120px 0px;
     .section-title{
         margin-bottom: 40px;
     }
@@ -71,14 +73,16 @@ const BuyDrPepeStyle = styled.div`
     }
     
     @media only screen and (max-width: 1200px) {
-        padding-bottom: 100px;
+        margin-bottom: 100px;
+        padding: 100px 0px;
         .section-title{
             margin-bottom: 30px;
         }
     }
     @media only screen and (max-width: 991px) {
-        padding-top: 60px;
-        padding-bottom: 90px;
+        margin-top: 60px;
+        margin-bottom: 90px;
+        padding: 80px 0px;
         .buy-drpepe-right{
             margin: auto;
             max-width: 100%;
@@ -88,8 +92,9 @@ const BuyDrPepeStyle = styled.div`
         
     }
     @media only screen and (max-width: 767px) {
-        padding-top: 50px;
-        padding-bottom: 70px;
+        margin-top: 50px;
+        margin-bottom: 70px;
+        padding: 60px 0px;
         .section-title{
             margin-bottom: 20px;
         }

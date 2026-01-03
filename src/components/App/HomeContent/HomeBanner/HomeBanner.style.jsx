@@ -32,6 +32,13 @@ const HomeBannerStyle = styled.div`
         color: #FFFFFF;
         position: relative;
         z-index: 1111;
+        .banner-shape{
+            position: absolute;
+            bottom: -13%;
+            left: 10%;
+            width: 80%;
+            z-index: 0;
+        }
         h1{
             line-height: 114.28%;
             font-size: 70px;
@@ -40,6 +47,8 @@ const HomeBannerStyle = styled.div`
             text-shadow: 0 5px 0 #AA73B6;
             font-weight: 800;
             text-transform: uppercase;
+            position: relative;
+            z-index: 1;
             
         }
         p{
@@ -49,10 +58,14 @@ const HomeBannerStyle = styled.div`
             margin-bottom: 40px;
             font-weight: 500;
             line-height: 200%;
+            position: relative;
+            z-index: 1;
         }
     }
     .banner-progress{
         margin-bottom: 50px;
+        position: relative;
+            z-index: 1;
     }
     .progress-item{
         display: flex;
@@ -93,6 +106,8 @@ const HomeBannerStyle = styled.div`
     } 
     
     .banner-timer{
+        position: relative;
+            z-index: 1;
         h5{
             font-size: 18px;
             font-weight: 600;

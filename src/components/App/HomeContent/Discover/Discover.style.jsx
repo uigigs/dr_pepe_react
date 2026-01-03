@@ -5,16 +5,12 @@ const DiscoverStyle = styled.div`
     padding-bottom: 120px;
     .discover-images{
         position: relative;
-        &::after{
-            content: '';
+        .discover-shape{
             position: absolute;
             z-index: 0;
-            background: #79559b;
-            filter: blur(300px);
-            width: 60%;
-            height: 240px;
-            left: 20%;
-            top: 20%;
+            left: 10%;
+            top: -60%;
+            max-width: 80%;
         }
     }
     .discover-img{
