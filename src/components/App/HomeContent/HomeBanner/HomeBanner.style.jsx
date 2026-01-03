@@ -21,9 +21,9 @@ const HomeBannerStyle = styled.div`
             padding-bottom: 20px;
         }
     } 
-    .dplLFl{
+    .dplLFl, .sc-fAUdSK{
         position: relative;
-        z-index: 111;
+        z-index: 11;
     }
     .banner-content{
         text-align: center;
