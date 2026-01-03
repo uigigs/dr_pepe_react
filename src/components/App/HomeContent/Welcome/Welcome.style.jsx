@@ -40,7 +40,7 @@ const WelcomeStyle = styled.div`
         }
     }
     @media only screen and (max-width: 767px) {
-        padding-top: 150px;
+        padding-top: 140px;
         .overlay{
             padding-bottom: 0px;
         }

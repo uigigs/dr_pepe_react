@@ -98,6 +98,7 @@ const HeaderStyle = styled.div`
                 justify-content: center;
                 position: absolute;
                 background: rgba(255, 255, 255,0.15);
+                backdrop-filter: blur(5px);
                 border: none;
                 outline: none;
             }

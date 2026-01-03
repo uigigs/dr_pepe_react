@@ -11,13 +11,6 @@ import arrowTop from '../../../../assets/images/icon/arrow-top.png'
 import ScrollAnimate from '../../../Core/ScrollAnimate'
 
 const Footer = () => {
-    const handleBackToTop = (e) => {
-        e.preventDefault()
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        })
-    }
     return (
         <FooterStyle>
             <div className="container">
@@ -99,11 +92,7 @@ const Footer = () => {
                                 <li><a href="#">Whitepaper</a></li>
                             </ul>
 
-                            <a
-                                href="#"
-                                className="back-to-top"
-                                onClick={handleBackToTop}
-                            >
+                            <a href="#" className="back-to-top" >
                                 Back to Top <img src={arrowTop} alt="icon" />
                             </a>
                         </div>

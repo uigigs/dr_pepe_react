@@ -11,44 +11,94 @@ import peoples from '../../../../assets/images/icon/peoples.png'
 import ScrollAnimate from '../../../Core/ScrollAnimate'
 
 const Tokenomics = () => {
+
+    const distributionList = [
+        {
+            icon: peoples,
+            text: 'Community — staking, liquidity, rewards',
+            percent: '50%',
+        },
+        {
+            icon: lock,
+            text: 'Development — AI research and product evolution',
+            percent: '20%',
+        },
+        {
+            icon: coin,
+            text: 'Team — long-term vision',
+            percent: '15%',
+        },
+        {
+            icon: chain,
+            text: 'Partnerships & Integrations',
+            percent: '10%',
+        },
+        {
+            icon: blueFire,
+            text: 'Cash — reserve & stabilization',
+            percent: '5%',
+        },
+    ]
+
+    const mechanismsList = [
+        '🔥 Automatic Burn',
+        '💧 Locked Liquidity',
+        '🗳 Progressive DAO Governance',
+    ]
+
     return (
         <TokenomicsStyle>
             <div className="container">
+
                 <ScrollAnimate delay={200}>
                     <SectionTitle title="Tokenomics — Designed for Growth and Sustainability" />
                 </ScrollAnimate>
+
                 <div className="row">
+
+                    {/* LEFT */}
                     <div className="col-lg-6">
                         <ScrollAnimate delay={250}>
                             <div className="tokenomics-left">
                                 <h6>Distribution of $DRPEPE:</h6>
+
                                 <ul>
-                                    <li><span className='list-icon'><img src={peoples} alt="icon" /></span> Community — staking, liquidity, rewards <span>50%</span></li>
-                                    <li><span className='list-icon'><img src={lock} alt="icon" /></span> Development — AI research and product evolution <span>20%</span></li>
-                                    <li><span className='list-icon'><img src={coin} alt="icon" /></span> Team — long-term vision <span>15%</span></li>
-                                    <li><span className='list-icon'><img src={chain} alt="icon" /></span> Partnerships & Integrations <span>10%</span></li>
-                                    <li><span className='list-icon'><img src={blueFire} alt="icon" /></span> Cash — reserve & stabilization <span>5%</span></li>
+                                    {distributionList.map((item, index) => (
+                                        <li key={index}>
+                                            <span className="list-icon">
+                                                <img src={item.icon} alt="icon" />
+                                            </span>
+                                            {item.text}
+                                            <span>{item.percent}</span>
+                                        </li>
+                                    ))}
                                 </ul>
 
                                 <h6>Key Mechanisms:</h6>
-                                <ol className='mb-0'>
-                                    <li>🔥 Automatic Burn</li>
-                                    <li>💧 Locked Liquidity</li>
-                                    <li>🗳 Progressive DAO Governance</li>
+
+                                <ol className="mb-0">
+                                    {mechanismsList.map((item, index) => (
+                                        <li key={index}>{item}</li>
+                                    ))}
                                 </ol>
                             </div>
                         </ScrollAnimate>
                     </div>
+
+                    {/* RIGHT */}
                     <div className="col-lg-6">
                         <ScrollAnimate delay={300}>
                             <div className="tokenomics-right">
                                 <div className="tokenomics-img">
                                     <img src={TokenomicsImg} alt="img" />
                                 </div>
-                                <p>Each holder feeds the intelligence network. The more you hold, the more intelligent the system  becomes.</p>
+                                <p>
+                                    Each holder feeds the intelligence network. The more you hold, the more intelligent the system becomes.
+                                </p>
                             </div>
                         </ScrollAnimate>
                     </div>
+
                 </div>
             </div>
         </TokenomicsStyle>

@@ -89,6 +89,9 @@ const BuyDrPepeStyle = styled.div`
             margin-top: 40px;
             padding-left: 0;
         }
+        .buy-drpepe-left{
+            padding-right: 0;
+        }
         
     }
     @media only screen and (max-width: 767px) {
