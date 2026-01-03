@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  background: #1E1C27;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 200%;
+  font-family: "Grandstander", cursive;
+  overflow-x: hidden;
+}
+.no-border{
+    border: none !important;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+
+.container{
+    max-width: 1220px;
+    margin: auto;
+    padding: 0px 20px;
+}
+button{
+    border: none;
+    outline: none;
+}
+.primary-btn{
+    background: #AA73B6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.hover-btn .btn-text{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 30px;
+    overflow: hidden;
+    transition: 0.3s;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    font-size: 18px;
+    color: #FFF;
+    border: 0;
+    outline: 0;
+}
+.hover-btn .btn-text span{
+    transition: 0.3s;
+}
+.hover-btn:hover .btn-text span{
+    transform: translateY(-35px);
+}
+
+.offcanvas-backdrop{
+    background: rgba(0,0,0,0.5);
+    opacity: 1 !important;
+    backdrop-filter: blur(6px);
+}
+
+.modal-backdrop.show{
+    z-index: 9999;
+}
+img{
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 1440px) {
+    
+}
+@media only screen and (max-width: 1200px) {
+    body{
+        font-size: 16px;
+    }
+    
+    .container{
+        max-width: 990px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .hover-btn .btn-text{
+        font-size: 16px;
+    }
+    .hover-btn .btn-text span{
+        margin-top: 0px
+    }
+    .hover-btn:hover .btn-text span{
+        transform: translateY(-32px);
+    }
+    .container{
+        max-width: 700px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    body{
+        font-size: 14px;
+    }
+    .hover-btn .btn-text{
+        font-size: 15px;
+    }
+    
+    .container{
+        max-width: 600px;
+        margin: auto;
+        padding: 0px 15px;
+    }
+    .hover-btn .btn-text span{
+        margin-top: 3px
+    }
+    .hover-btn:hover .btn-text span{
+        transform: translateY(-32px);
+    }
+}
