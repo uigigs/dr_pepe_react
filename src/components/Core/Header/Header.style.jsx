@@ -176,7 +176,7 @@ const HeaderStyle = styled.div`
             }
         }
         .header-inner .header-right{
-            gap: 8px;
+            gap: 15px;
         }
     }
     @media only screen and (max-width: 575px) {

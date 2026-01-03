@@ -134,6 +134,8 @@ const HomeBannerStyle = styled.div`
            margin: auto;
            font-size: 18px;
            font-weight: 600;
+           position: relative;
+           z-index: 1;
               
     }
     
