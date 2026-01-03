@@ -21,14 +21,17 @@ const HomeBannerStyle = styled.div`
             padding-bottom: 20px;
         }
     } 
-    
+    .dplLFl{
+        position: relative;
+        z-index: 111;
+    }
     .banner-content{
         text-align: center;
         max-width: 700px;
         margin: auto;
         color: #FFFFFF;
         position: relative;
-        z-index: 11;
+        z-index: 1111;
         h1{
             line-height: 114.28%;
             font-size: 70px;

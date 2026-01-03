@@ -4,17 +4,16 @@ import styled from "styled-components";
 const BuyDrPepeStyle = styled.div`
     padding-top: 70px;
     padding-bottom: 120px;
-    
+    .section-title{
+        margin-bottom: 40px;
+    }
     .buy-drpepe-left{
         padding-right: 20px;
         h6{
             font-size: 17px;
             margin-bottom: 16px;
-            margin-top: 25px;
         }
-        .top{
-            margin-bottom: 30px;
-            ul{
+        ul{
                 list-style: none;
                 padding: 0;
                 margin: 0;
@@ -36,10 +35,20 @@ const BuyDrPepeStyle = styled.div`
                     
                 }
             }
+        
+    }
+    .buy-btn{
+            height: 60px;
+            width: 200px;
         }
-        .bottom{
-            margin-bottom: 30px;
-            ul{
+    .buy-drpepe-right{
+        padding-left: 20px;
+        h6{
+            margin-bottom: 20px;
+            max-width: 500px;
+            line-height: 150%;
+        }
+        ul{
                 list-style: none;
                 padding: 0;
                 margin: 0;
@@ -47,7 +56,7 @@ const BuyDrPepeStyle = styled.div`
                     position: relative;
                     border-radius: 10px;
                     overflow: hidden;
-                    margin-bottom: 25px;
+                    margin-bottom: 35px;
                     display: flex;
                     align-items: flex-start;
                     justify-content: flex-start;
@@ -59,27 +68,13 @@ const BuyDrPepeStyle = styled.div`
                     
                 }
             }
-        }
-        .buy-btn{
-            height: 60px;
-            width: 200px;
-        }
-    }
-    
-    .buy-drpepe-right{
-        max-width: 570px;
-        margin-left: auto;
-        min-height: 100%;
-        background: rgba(255,255,255,0.04);
-        border-radius: 20px;
-        overflow: hidden;
-        img{
-            width: 100%;
-        }
     }
     
     @media only screen and (max-width: 1200px) {
         padding-bottom: 100px;
+        .section-title{
+            margin-bottom: 30px;
+        }
     }
     @media only screen and (max-width: 991px) {
         padding-top: 60px;
@@ -88,11 +83,16 @@ const BuyDrPepeStyle = styled.div`
             margin: auto;
             max-width: 100%;
             margin-top: 40px;
+            padding-left: 0;
         }
+        
     }
     @media only screen and (max-width: 767px) {
         padding-top: 50px;
         padding-bottom: 70px;
+        .section-title{
+            margin-bottom: 20px;
+        }
         .buy-drpepe-left{
             .buy-btn{
                 height: 50px;
